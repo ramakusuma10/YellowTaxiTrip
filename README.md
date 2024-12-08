@@ -1,11 +1,12 @@
-# Yellow Taxi Trip API
+# Yellow Taxi Trip Dashboard
 
-Aplikasi ini adalah API untuk mendapatkan data perjalanan taksi kuning di New York City. API ini mendukung pengambilan data perjalanan secara keseluruhan dan dengan filter berdasarkan berbagai parameter.
+Aplikasi ini adalah dashboard analitik untuk data perjalanan taksi kuning di New York City, memungkinkan pengguna untuk melihat dan memfilter data perjalanan berdasarkan beberapa kriteria.
 
 ## Fitur
 
-- Mendapatkan data semua perjalanan taksi.
-- Mendapatkan data perjalanan taksi dengan filter seperti waktu pickup, waktu dropoff, tarif minimum, tarif maksimum, jarak minimum, jarak maksimum, dan tipe pembayaran.
+- Visualisasi perjalanan taksi menggunakan peta interaktif.
+- Filter berdasarkan jenis pembayaran, waktu pickup, waktu dropoff, kisaran tarif, dan kisaran jarak.
+- Menampilkan detail perjalanan seperti waktu pickup, waktu dropoff, tarif, dan jarak.
 
 ## Prasyarat
 
@@ -23,7 +24,7 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan proyek ini secara l
 Clone repositori ini ke komputer lokal Anda menggunakan git:
 
 ```bash
-git clone https://github.com/aaridhon19/Yellow_Taxi_Trip_BE.git
+git clone https://github.com/aaridhon19/Yellow_Taxi_Trip_FE.git
 cd repository-name
 ```
 
@@ -36,8 +37,8 @@ npm install
 ### 3. Add ENV 
 
 ```bash
-PORT=4500
-API_URL=https://data.cityofnewyork.us/resource/gkne-dk5s.json
+REACT_APP_API_URL_BE=https://yellow-taxi-trip-be.vercel.app/api/trips
+REACT_APP_API_URL_BE_FILTER=https://yellow-taxi-trip-be.vercel.app/api/trips/filter
 ```
 
 ### 4. Start Project 
@@ -46,27 +47,8 @@ API_URL=https://data.cityofnewyork.us/resource/gkne-dk5s.json
 npm start
 ```
 
-### 5. Access API
+### 5. Open Your Browser
 
-Mendapatkan semua perjalanan 
 ```bash
-GET http://localhost:3100/api/trips
-```
-
-Mendapatkan perjalanan berdasarkan filter 
-# Fare
-```bash
-GET http://localhost:3100/api/trips/filter?min_fare=2&max_fare=10
-```
-# Distance
-```bash
-GET http://localhost:3100/api/trips/filter?min_distance=1&max_distance=2
-```
-# Time
-```bash
-GET http://localhost:3100/api/trips/filter?pickup_datetime=2014-01-01T00:01:00.000&dropoff_datetime=2014-01-01T00:19:00.000
-```
-# Payment
-```bash
-GET http://localhost:3100/api/trips/filter?payment_type=UNK
+http://localhost:3000 
 ```
