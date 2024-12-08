@@ -1,0 +1,173 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.filters {
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #ccc;
+}
+
+.filters h3 {
+  margin-top: 0;
+}
+
+/* Index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Filter.css */
+.filter-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.filter-group {
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  font-size: 0.9em;
+  color: #555;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.select-dropdown {
+  border-radius: 4px;
+}
+
+.input-field {
+  width: 93%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+}
+
+.range-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.range-inputs .input-field {
+  flex: 1;
+}
+
+/* MapView.css */
+.map-view-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .custom-popup .leaflet-popup-content {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 10px;
+    background-color: #f0530b; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .custom-popup .leaflet-popup-tip-container {
+    display: none;
+  }
+  
+  .custom-popup strong {
+    color: #f1db11; 
+  }
+  
+  /* Loading.css */
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+  }
+  
+  .loading {
+    border: 8px solid #e6ce19fe;
+    border-top: 8px solid #ff9500;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Legend.css */
+  .map-legend {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.68);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+  }
+  
+  .map-legend h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+  }
+  
+  .map-legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .map-legend li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+  
+  .green { background-color: green; }
+  .blue { background-color: blue; }
+  .red { background-color: red; }
+  .purple { background-color: purple; }
+  .gray { background-color: gray; }
