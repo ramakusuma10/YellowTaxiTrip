@@ -24,7 +24,7 @@ Ikuti langkah-langkah berikut untuk mengatur dan menjalankan proyek ini secara l
 Clone repositori ini ke komputer lokal Anda menggunakan git:
 
 ```bash
-git clone https://github.com/aaridhon19/Yellow_Taxi_Trip_FE.git
+git clone https://github.com/ramakusuma10/YellowTaxiTrip.git
 cd repository-name
 ```
 
@@ -37,8 +37,8 @@ npm install
 ### 3. Add ENV 
 
 ```bash
-REACT_APP_API_URL_BE=https://yellow-taxi-trip-be.vercel.app/api/trips
-REACT_APP_API_URL_BE_FILTER=https://yellow-taxi-trip-be.vercel.app/api/trips/filter
+REACT_APP_API_URL_BE=https://yellow-taxi-trip-be-chi.vercel.app/api/trips
+REACT_APP_API_URL_BE_FILTER=https://yellow-taxi-trip-be-chi.vercel.app/api/trips/filter
 ```
 
 ### 4. Start Project 
@@ -50,5 +50,5 @@ npm start
 ### 5. Open Your Browser
 
 ```bash
-http://localhost:3000 
+http://localhost:4157 
 ```
